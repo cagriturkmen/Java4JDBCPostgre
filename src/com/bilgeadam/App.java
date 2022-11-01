@@ -156,7 +156,7 @@ public class App {
 				PreparedStatement pstmt = conn.prepareStatement(sql)){
 			pstmt.setInt(1, id);
 			pstmt.executeUpdate();
-			System.out.println(id+ "li aktör silindi.");
+			System.out.println(id+ " idli aktör silindi.");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -178,22 +178,22 @@ public class App {
 		Actor actor = new Actor("Cagri","Trkmen");
 		Actor actor2 = new Actor("Tarık","Akan");
 		Actor actor3 = new Actor("Hulya","Kcygt");
-		actorList.add(actor3);
-		actorList.add(actor2);
-		actorList.add(actor);
+//		actorList.add(actor3);
+//		actorList.add(actor2);
+//		actorList.add(actor);
 
 
 	//System.out.println(app.insertActor(actor));	;
-		try {
-			app.insertActors(actorList);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			app.insertActors(actorList);
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
 		
 		
-		
-		//	app.updateLastName(201, "Turkmen");
+		//	app.updateLastName(201, "soyad");
 			app.deleteActor(201);
 	}
 
